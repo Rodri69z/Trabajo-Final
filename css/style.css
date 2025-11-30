@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    BODY                                    */
+/* -------------------------------------------------------------------------- */
+
+body{
+    /* display: flex;
+    flex-direction: column; */
+    /* Nota: Esto aplicarlo cuando ya tengamos hecho el carrito y contactos, quiero ver si se mantiene en columna todo sin dejar ningun espacio. */
+    min-height: 100vh;
+}
+
+/* Arreglar: EL TAMAÑO DE CUANTO VA A OCUPAR LA PAGINA (Osea en vh) */
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+header{
+    background: linear-gradient(#121214 , #121214d0 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+header > h1{
+    font-family:  Momo Trust Display, sans-serif;
+    font-size: 3rem;
+}
+header > h1 > a{
+    text-decoration: none;
+    color: white;
+}
+
+header > h1 > a:hover{
+    text-decoration: underline;
+    color: rgb(88, 77, 200);
+}
+
+
+header > nav > ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.lista-navegacion > a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.lista-navegacion >a:hover{
+    text-decoration: underline;
+    color: rgb(88, 77, 200);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                           MAIN PRODUCTOS                                   */
+/* -------------------------------------------------------------------------- */
+
+.titulo__productos{
+    font-family: Montserrat, sans-serif;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.titulo__productos > h2{
+    font-size: 2rem;
+    background-color: rgb(202, 127, 46);
+    width: 28rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid #121214;
+    text-align: center;
+}
+
+/* --------------------------------- SECTION -------------------------------- */
+
+.lista__productos__card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.producto__card{
+    font-size: 4px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    background-color: rgb(202, 127, 46);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.producto__card:hover{
+    border: 2px solid #121214 ;
+}
+
+.producto__card > img{
+    padding: 1rem;
+    width: 100%;
+    height: 275px;
+}
+
+.producto__card > h3{
+    font-size: 6em;
+    text-align: center;
+}
+.producto__card > p{
+    font-size: 5.5em;
+    text-align: center;
+}
+
+
+.btn{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MAIN RESEÑAS                                */
+/* -------------------------------------------------------------------------- */
+
+.titulo__resenas > h2{
+    font-size: 2rem;
+    background-color: rgb(202, 127, 46);
+    /* width: 28rem; */
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid #121214;
+    text-align: center;
+}
+
+.resenas__card{
+    display: grid;
+    grid-template-rows: repeat(3, 8rem);
+    margin: 3rem;
+    background-color: rgb(202, 127, 46);
+    border-radius: 2rem;
+    border: 2px solid #121214;
+}
+
+.resenas__card > article{
+    display: grid;
+    /* rows 1 */
+}
+
+.resena__usuario{
+    font-size: 8px;
+}
+
+.resena__usuario > h3{
+    font-size: 3em;
+    padding-left: 2rem;
+}
+
+.resena__usuario > p{
+    font-size: 2em;
+    padding-left: 3rem;
+    overflow: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer{
+    background: linear-gradient(#121214d0 , #121214 );
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 4px;
+}
+
+.footer__titulo{
+    font-family: Montserrat, sans-serif;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+    font-size: 6em;
+}
+
+.footer__descripcion{
+    padding: 2rem;
+    font-size: 5em;
+    color: white;
+}
+
+.footer__navegacion{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer__navegacion > ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+.footer__ui{
+    font-size: 2rem;
+}
+
+.footer__ui > a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__navegacion > p{
+    text-align: end;
+    padding-right: 1rem;
+    color: white;
+    font-size: 5em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*                                CONTACTO PAGE                               */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    background-color: rgb(202, 127, 46);
+    border-radius: 2rem;
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+@media (max-width: 450px){
+    .formulario > form{
+        display: grid;
+        grid-template-rows: repeat(4, 30px);
+        grid-template-columns: 1fr 1fr;
+        gap: 3.5rem;
+        font-size: 1.8rem;
+        padding-left: 3rem;
+    }
+
+    .formulario > form > button{
+        grid-column: 2/ -4;
+    }
+}
+
+@media (min-width: 450px){
+    .formulario > form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+}
+
+/* Resolvi el problema del form, necesitaba los names (objetos en js), sin eso no se puede mandar. */
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*                                CARRITO PAGE                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+
+.carrito-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.titulo__carrito{
+    font-size: 2rem;
+    background-color: rgb(202, 127, 46);
+    width: 28rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid #121214;
+    text-align: center;
+    margin: 2rem;
+}
+
+.carrito{
+    display: flex;
+    background-color: rgb(202, 127, 46);
+    border-radius: 2rem;
+    border: 2px solid #121214;
+    padding: 3rem;
+    gap: 3rem;
+}

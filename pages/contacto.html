@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- GOOGLE FONTS FAMILY v1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS FAMILY v2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--  HEADER UI ICON -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <!-- FOOTER UI ICON -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <title>Contacto</title>
+    </head>
+    <body>
+    <header>
+        <h1><a href="../index.html">MANGASHOP</a></h1>
+        <nav>
+            <ul>
+                <li class="lista-navegacion"><a href="../index.html"><i class="fi fi-br-home"></i></a></li>
+                <li class="lista-navegacion"><a href="./carrito.html"><i class="fi fi-br-shopping-bag"></i><span id="contador-carrito">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formulario">
+            <form action="https://formspree.io/f/xqajkalw" method="POST">
+                <label>
+                    Correo:
+                    <input type="email" name="correo">
+                </label>
+                <label>
+                    Mensaje:
+                    <textarea name="textarea" placeholder="Hola me comunico.." id="text-area"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__card">
+            <h2 class="footer__titulo">Sobre Nosotros:</h2>
+            <p class="footer__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis veniam qui alias praesentium ipsa assumenda nobis quisquam nesciunt delectus odit cumque, error magnam, labore, similique accusamus totam ipsam. Laudantium, a.</p>
+        </div>
+        <nav class="footer__navegacion">
+            <ul>
+                <li class="footer__ui"><a href="../index.html"><i class="fi fi-brands-instagram"></i></a></li>
+                <li class="footer__ui"><a href="../index.html"><i class="fi fi-brands-facebook"></i></a></li>
+                <li class="footer__ui"><a href="../index.html"><i class="fi fi-brands-whatsapp"></i></a></li>
+            </ul>
+            <p>Trabajo realizado por: Rodrigo</p>
+        </nav>
+    </footer>
+    <script type="module" src="../js/carrito.js"></script>
+    </body>
+</html>
