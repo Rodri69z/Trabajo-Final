@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("./data/productos.json")
     .then((res) => {
       if (!res.ok) {
-        throw new Error('Error HTTP status: ${res.status}');
+        throw new Error(`Error HTTP status: ${res.status}`);
       }
       return res.json(); 
     })
