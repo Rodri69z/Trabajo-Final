@@ -1,8 +1,8 @@
 [
-    {"nombre" : "Blue Lock vol.17", "img" : "./img/Blue Lock vol.17.jpg", "precio" : "$30.000", "id": "1"},
-    {"nombre" : "Chainsaw man vol.11", "img" : "./img/Chainsaw man vol.11.jpg", "precio" : "$30.000", "id": "2"},
-    {"nombre" : "Jujutsu Kaisen vol.25", "img" : "./img/Jujutsu Kaisen vol.25.jpg", "precio" : "$30.000", "id": "3"},
-    {"nombre" : "Demon Slayer vol.17", "img" : "./img/Kimetsu no Yaiba vol.17.jpg", "precio" : "$30.000", "id": "4"},
-    {"nombre" : "My Hero Academia vol.42", "img" : "./img/my hero academia vol.42.jpg", "precio" : "$30.000", "id": "5"},
-    {"nombre" : "Naruto vol.41", "img" : "./img/Naruto vol.41.jpg", "precio" : "$30.000", "id": "6"}
+    {"nombre" : "Blue Lock vol.17", "img" : "/img/Blue Lock vol.17.jpg", "precio" : "$30.000", "id": "1"},
+    {"nombre" : "Chainsaw man vol.11", "img" : "/img/Chainsaw man vol.11.jpg", "precio" : "$30.000", "id": "2"},
+    {"nombre" : "Jujutsu Kaisen vol.25", "img" : "/img/Jujutsu Kaisen vol.25.jpg", "precio" : "$30.000", "id": "3"},
+    {"nombre" : "Demon Slayer vol.17", "img" : "/img/Kimetsu no Yaiba vol.17.jpg", "precio" : "$30.000", "id": "4"},
+    {"nombre" : "My Hero Academia vol.42", "img" : "/img/my hero academia vol.42.jpg", "precio" : "$30.000", "id": "5"},
+    {"nombre" : "Naruto vol.41", "img" : "/img/Naruto vol.41.jpg", "precio" : "$30.000", "id": "6"}
 ]
